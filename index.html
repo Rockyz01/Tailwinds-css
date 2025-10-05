@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="app.component.css" rel="stylesheet">
+  <link rel="icon" href="https://imgs.search.brave.com/PSsGnrlwP-LVWsiLcdq5bCwNPjl9AgOIP9QCErNS5Tw/...">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <title>Tailwind CSS</title>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900">
+
+  <button id="darkBtn"
+    class="fixed top-4 right-4 px-3 py-2 bg-gray-600 text-white rounded shadow-md hover:bg-gray-700 transition">
+    🌛
+  </button>
+
+  <header class="bg-gray-600 text-white p-4 text-center font-bold text-3xl dark:bg-gray-800">
+    Slashers clásicos y Nosferatu
+  </header>
+
+  <main class="p-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+      <div class="bg-white dark:bg-gray-700 dark:text-white p-4 rounded shadow text-center overflow-hidden transform transition hover:scale-105">
+        <img src="viernes 13.jpg" alt="producto 1" class="rounded mx-auto mb-2 max-h-72 w-auto">
+        <p class="text-sm font-medium">Viernes 13</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 dark:text-white p-4 rounded shadow text-center overflow-hidden transform transition hover:scale-105">
+        <img src="chucky0415202402rev_a18b398f-9ae0-4799-9547-74f93761dd97_580x.jpg" alt="producto 2" class="rounded mx-auto mb-2 max-h-72 w-auto">
+        <p class="text-sm font-medium">Chucky</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 dark:text-white p-4 rounded shadow text-center overflow-hidden transform transition hover:scale-105">
+        <img src="pesadilla en la calle elm.jpg" alt="producto 3" class="rounded mx-auto mb-2 max-h-72 w-auto">
+        <p class="text-sm font-medium">Pesadilla en la calle Elm</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 dark:text-white p-4 rounded shadow text-center overflow-hidden transform transition hover:scale-105">
+        <img src="nosferatu.jpg" alt="producto 4" class="rounded mx-auto mb-2 max-h-72 w-auto">
+        <p class="text-sm font-medium">Nosferatu (1922)</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 dark:text-white p-4 rounded shadow text-center overflow-hidden transform transition hover:scale-105">
+        <img src="hellraiser.jpg" alt="producto 5" class="rounded mx-auto mb-2 max-h-72 w-auto">
+        <p class="text-sm font-medium">Hellraiser</p>
+      </div>
+
+      <div class="bg-white dark:bg-gray-700 dark:text-white p-4 rounded shadow text-center overflow-hidden transform transition hover:scale-105">
+        <img src="saw.jpg" alt="producto 6" class="rounded mx-auto mb-2 max-h-72 w-auto">
+        <p class="text-sm font-medium">Saw</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-white text-center p-4 mt-4 dark:bg-gray-950">
+    Desarrollado por el equipo 2
+  </footer>
+
+  <script>
+    const html = document.documentElement;
+    const btn = document.getElementById("darkBtn");
+    btn.addEventListener("click", () => {
+      html.classList.toggle("dark");
+    });
+  </script>
+
+</body>
+</html>

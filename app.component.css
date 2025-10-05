@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper-toggle {
+  @apply w-screen h-screen flex justify-center items-center;
+}
+
+.toggle {
+  @apply w-80 h-80 bg-slate-200 text-black flex justify-center items-center rounded-lg shadow-md transition;
+}
+
+.dark .toggle {
+  @apply bg-slate-800 text-white;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
